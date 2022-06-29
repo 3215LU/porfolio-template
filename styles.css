@@ -3,7 +3,8 @@
 :root {
   --primary-color: #3282B8;
   --primary-color-dark: #0F4C75;
-  --accent-color: #FFF8F0;
+  --accent-color: #ffffff;
+  
 }
 
 html {
@@ -49,8 +50,7 @@ body {
   color: var(--accent-color);
   font-size: 18px;
   letter-spacing: 2px;
-  transition: all 1s;
-  
+  transition: all 1s;  
 }
 
 .logo {
@@ -67,30 +67,43 @@ body {
 
 .introduction {
   padding-left: 50px;
-  
 }
-
+/*subtitulo debajo de la iamgen*/
 .content {
   display: flex;
   height: 100vh;
   width: 100%;
   flex-direction: row;
- 
 }
+/* COnvertir la letra tipo maquina de escribir*/
+span {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  margin-bottom: 0%;
+  border-right: 4px solid;
+  width: 54ch;
+  animation: maquinaEscribir 4s steps(54), blink .5s infinite step-end alternate;
+  overflow:hidden;
+  }
+  
+  @keyFrames maquinaEscribir {
+  from { width: 0}
+  }
+  
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
+
+
 /*Texto debajo de la imagen*/
 section div h3{
   font-family: cursive;
-}
-/*Titulos de los espacions en blanco, sin contar el primero*/
-h2{
-  text-shadow: -1px -1px 1px #aaa, 
-             0px 4px 1px rgba(0,0,0,0.5);
-             
+  color: #0F4C75;
 }
 .half-section {
   width: 50%;
 }
-
 .avatar-container {
   height: 100vh;
   display: flex;
@@ -107,6 +120,7 @@ h2{
 
 .avatar-container h3 {
   margin: 0;
+  margin-left: 2%;
 }
 
 h1 {
@@ -138,6 +152,8 @@ h1 {
   justify-content: center;
   color: var(--accent-color);
   letter-spacing: 1px;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .title-section {
@@ -217,19 +233,23 @@ footer {
   color: var(--accent-color);
   padding: 20px;
   font-style: oblique;
-  
 }
 
 .footer-section-container {
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .footer-link {
-  
   text-decoration: none;
   color: var(--accent-color);
   font-size: 18px;
 }
 
+/*Informatica section parrafos*/
+.informatica{
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-align: justify;
+ text-justify: auto;
+ font-size: 1vw;  
+}

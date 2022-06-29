@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Mi Portfolio</title>
 </head>
 <body>
@@ -33,18 +34,19 @@
     <div class="half-section">
      <div class="avatar-container">
       <img src="./assets/avatar.png" alt="">
-      <h3 id="desHome">"Yo, al aire libre..."</h3>
+      <h3 class="" id="desHome"><span>"Yo, al aire libre, me encanta la naturaleza ♥..."</span></h3>
+      
      </div>
     </div>
     <div class="half-section text-section">
       <div class="introduction">
-        <h1 id="nomHome" class="title">Hola!, <br> Soy Roxana Benicio </h1>
+        <h1 id="nomHome" class="animate__animated animate__bounce">Hola!, <br> Soy Roxana Benicio </h1>
         <ul class="socials">
-          <li><a class="socials-icon" href=""><i class="bi bi-github"></i></a></li>
-          <li><a class="socials-icon" href=""><i class="bi bi-linkedin"></i></a></li>
-          <li><a class="socials-icon" href=""><i class="bi bi-twitter"></i></a></li>
-          <li><a class="socials-icon" href=""><i class="bi bi-facebook"></i></a></li>
-          <li><a class="socials-icon" href=""><i class="bi bi-instagram"></i></a></li>
+          <li><a class="socials-icon" href="https://github.com/3215LU"><i class="bi bi-github"></i></a></li>
+          <li><a class="socials-icon" href="https://www.linkedin.com/in/roxana-benicio-7b1923236/"><i class="bi bi-linkedin"></i></a></li>
+          <li><a class="socials-icon" href="https://twitter.com/nombre43539384"><i class="bi bi-twitter"></i></a></li>      
+          <li><a class="socials-icon" href="/cv_Roxana_Benicio.pdf"><i class="bi bi-file-earmark-person-fill"></i></a></li>
+          <li><a class="socials-icon" href="https://www.instagram.com/instad1persona/"><i class="bi bi-instagram"></i></a></li>
         </ul>
   
         <p class="description">Soy estudiante Analista Progrmador Universitario, con ganas de aprender y de superación, me gusta capacitarme continuamente <br> Déjame contarte un poco de mí, sigue deslizando!</p>
@@ -55,7 +57,7 @@
   
   <section id="about" class="content">
     <aside class="half-section text-section">
-      <p>- Capacidad para documentar, instalar, poner en marcha,
+      <p id="informatica">- Capacidad para documentar, instalar, poner en marcha,
         operar softwares variados. Manejos de varios sistemas operativos: Windows y Linux
         (terminal de texto). Asistir al Profesional de grado informático en tareas de
         relevamiento y análisis y diseño de sistemas informáticos. Puedo realizar tareas de
@@ -96,27 +98,97 @@
             <h3>Proyecto </h3>
             <p>
               Este es un front End de una de mis capacitaciones mas recientes.
-              Esta relacionado a la compra de entrada de una cpaciotación
-              Esta realizado con CSS3 y HTML 5
-              
+              Esta relacionado a la compra de entradas para asistir a una capaciotación.
+              Esta realizado con CSS3 y HTML 5.    
             </p>
             <a class="project-link" href="https://github.com/3215LU/TrabajoPr-cticoIntegrador_CC_Comision-22021/tree/main/TP_integrador"><i class="bi bi-github"></i> Ver más</a>
             <br>
             <a class="project-link" href="https://magical-piroshki-2f0019.netlify.app/"><i class="https://icons.getbootstrap.com/icons/hand-index/"></i>Mirar página</a>
+            <p>
+              Este es una pagina web con front End y backend.
+              Esta relacionado a la comrpa de autitos de collección, 
+              vista de catalogo, login admin y creación de cuentas.
+              Esta realizada con CSS,HTML5, BOSTRAP,JAVA,MYSQL.
+            </p>
+            <a class="project-link" href="https://github.com/3215LU/Java"><i class="bi bi-github"></i> Ver más</a>
+            <br>
           </li>
         </ul>
     </aside>
   </section>
+
+  
+  <section id="about" class="content">
+    <aside class="half-section text-section">
+      <p class="informatica">
+        • Introducción a la programación con Python Dictado por: (Licenciado en Ciencias de la Computación) Agustin Olmedo. Ofrecido por: Universidad Austral.
+        Año: 2022.
+      </p>
+      <p class="informatica">
+        • CURSO: Introducción al desarrollo web. Dictado: por Ingeniero Jóse Bocanegra. Pagina: <a class="cursos" href="https://es.coursera.org/learn/introduccion-desarrollo-web?.">Coursera</a>
+      </p>
+      <p class="informatica">
+        • CURSO: Redes Informática. Dictado en La universidad de agraria (UNJu-Fa), patrocinado por U21(Universitarios 21 de facultad de Ingenieria UNJU). Año
+        2019.
+      </p>
+      <p class="informatica">
+        • CURSO DE OPERADOR DE PC Duración: 3 meses. Dictado: Ministerio de Desarrollo Humano de la Provincia de Jujuy Lugar: Centro de Reciclaje y
+        Capacitación Joven.
+      </p>
+      <p class="informatica">
+        • CURSO DE REPARACIÓN DE CELULARES Duración: 3 meses. Dictado: Ministerio de Desarrollo Humano de la Provincia Lugar: Centro de Reciclaje y
+        Capacitación Joven.
+      </p>
+      <p class="informatica">
+        • CURSO: EXCEL PARA INGENIERO. Duración: 1 mes. Dictado en: UNJU-FI.    
+      </p>
+    </aside>
+    <aside class="half-section title-section">
+      <h2>Algunos cursos relacionado a la Computación e Informática</h2>
+    </aside>
+  </section>
+
+  <section id="projects" class="content">
+    <aside class="half-section title-section">
+      <h2>Cursos de electricidad y electronica</h2>
+    </aside>
+    <aside class="half-section text-section">
+      <p class="informatica">
+      • CURSO: Electricidad Fabril Fabril. Duración: 1 año. Dictado: Marcelo Díaz. Dirección General De Cultura Y Educación. Lugar: Centro de
+      Formación Profesional N 1. año 2020-2021.<br>
+      • CURSO: Electricidad Domiciliaria. Duración: 4 meses. Dictado: Profesor Lanze. Dirección General De Cultura Y Educación. Lugar: Centro de
+      Formación Profesional N 1.<br>
+      • CURSO BÁSICO DE LOGÍSTICA Duración: 30 horas. FECHA: 2019.<br>
+      • CURSO: INSTALADOR DE PANELES SOLARES Dictado por: Organización “Capacítate Para El Empleo”. Fundación Carlos Slim. Lugar:
+      <a class="cursos" href="https://capacitateparaelempleo.org">Capacitateparaelempleo</a> <br>
+      • 1er CONGRESO INTERNACIONAL DE ENERGÍAS RENOVABLES :Rol: Asistente. Duración: 3 días. FECHA: 24, 25, 26 de Abril 2019.<br>
+      • CURSO DE SEGURIDAD E HIGIENE EN ELECTRICIDAD Duración: 1 meses. Dictado por: Centro Formación Profesional Fray Luis Beltrán Jujuy
+      Lugar: Unión Obrera Metalúrgica Seccional Jujuy (UOMS).<br>
+      • CURSO DE ELECTRICIDAD BÁSICA Duración: 1 mes. Dictado por: Centro Formación Profesional Fray Luis Beltrán Jujuy Lugar: Unión Obrera
+      Metalúrgica Seccional Jujuy (UOMS) CURSO DE ELECTRICIDAD Duración: 3 meses. Dictado: Ministerio de Desarrollo Humano de la Provincia
+      de Jujuy Lugar: Centro de Reciclaje y Capacitación Joven.<br>
+      • CURSO DE ELECTRONICA Duración: 3 meses. Dictado: Ministerio de Desarrollo Humano de la Provincia de Jujuy Lugar: Centro de Reciclaje y
+      Capacitación Joven. CURSÉ: ESTADÍSTICA GENERAL. Duración: 1 año Dictado en: UCSE-DASS.<br>
+      • CURSO: Introducción a la Electricidad Dictado en la: Plataforma de aprendizaje virtual. <a class="cursos" href="https://cursospuntodigital.paisdigital.modernizacion.gob.ar/">cursospuntodigital</a> 
+      paisdigital.modernizacion.gob.ar/<br>
+      • CURSO: Electrónica Básica. Duración: 4 Meses. Dictado: Dirección General De Cultura Y Educación. Lugar: Centro de Formación Profesional
+      N 1.<br>
+    </p>
+                
+    </aside>
+  </section>
+
   <section id="contact" class="content">
     <aside class="half-section text-section">
-      <form action="">
+      <form action="" method="POST">
         <label for="name">Nombre</label>
-        <input class="input-field" type="text" name="name" id="name">
+        <input class="input-field" type="text" name="name" id="name" required>
         <label for="email">Email</label>
-        <input class="input-field" type="email" name="email" id="email">
+        <input class="input-field" type="email" name="email" id="email" required>
         <label for="message">Mensaje</label>
-        <textarea class="input-field" name="message" id="message" cols="30" rows="10"></textarea>
-        <input class="btn-send-message" type="submit" value="Enviar">
+        <textarea class="input-field" name="message" id="message" cols="30" rows="10" required></textarea>
+        <button class="btn-send-message" type="submit" value="Enviar">Enviar</button>
+      </form>
     </aside>
     <aside class="half-section title-section">
       <h2>Envíame un mensaje y charlemos!</h2>
@@ -126,16 +198,17 @@
   <footer>
     <div class="footer-section-container">
       <ul class="socials">
-        <li><a class="socials-icon" href=""> <i class="bi bi-github"></i></a></li>
-        <li><a class="socials-icon" href=""><i class="bi bi-linkedin"></i></a></li>
-        <li><a class="socials-icon" href=""><i class="bi bi-twitter"></i></a></li>
-        <li><a class="socials-icon" href=""><i class="bi bi-facebook"></i></a></li>
-        <li><a class="socials-icon" href=""><i class="bi bi-instagram"></i></a></li>
+        <li><a class="socials-icon" href="https://github.com/3215LU"><i class="bi bi-github"></i></a></li>
+        <li><a class="socials-icon" href="https://www.linkedin.com/in/roxana-benicio-7b1923236/"><i class="bi bi-linkedin"></i></a></li>
+        <li><a class="socials-icon" href="https://twitter.com/nombre43539384"><i class="bi bi-twitter"></i></a></li>      
+        <li><a class="socials-icon" href="/cv_Roxana_Benicio.pdf"><i class="bi bi-file-earmark-person-fill"></i></a></li>
+        <li><a class="socials-icon" href="https://www.instagram.com/instad1persona/"><i class="bi bi-instagram"></i></a></li>
+
       </ul>
     </div>
       <div class="footer-section-container">
         <p>
-          &copy; 2022 - <a class="footer-link" href="https://www.linkedin.com">Roxana Benicio</a>
+          &copy; 2022 - <a class="footer-link" href="https://www.linkedin.com/in/roxana-benicio-7b1923236/">Roxana Benicio</a>
         </p>
       </div>
   </footer>
