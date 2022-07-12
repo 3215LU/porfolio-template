@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family==Mitr:wght@200;400;700;800&display=swap');
 
 :root {
-  --primary-color: #3282B8;
-  --primary-color-dark: #0F4C75;
+  /*--primary-color: #3282B8;*/
+  /*--primary-color-dark: #0F4C75;*/
+  --primary-color-dark: #18978F;
+  
   --accent-color: #ffffff;
   
 }
@@ -21,7 +23,7 @@ body {
   position: fixed;
   width: 100%;
   background-color: var(--primary-color-dark);
-  z-index: 1;
+  z-index: 1;  
 }
 
 .menu {
@@ -48,25 +50,29 @@ body {
   padding: 20px;
   text-decoration: none;
   color: var(--accent-color);
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: 1vw;
   letter-spacing: 2px;
   transition: all 1s;  
+
 }
 
 .logo {
   text-decoration: none;
-  position: fixed;
+  /*position: fixed;*/
+  position: flex;
   float: left;
-  margin: 16px 36px;
+  /*margin: 16px 36px;*/
+  margin: 1% 2%;
   color: var(--accent-color);
-  font-size: 24px;
-  text-shadow: -1px -1px 1px #aaa;
+  /*font-size: 24px;*/
+  font-size: 2vw;
   font-weight: bold;
-
 }
 
 .introduction {
   padding-left: 50px;
+  
 }
 /*subtitulo debajo de la iamgen*/
 .content {
@@ -74,6 +80,7 @@ body {
   height: 100vh;
   width: 100%;
   flex-direction: row;
+  
 }
 /* COnvertir la letra tipo maquina de escribir*/
 .span {
@@ -85,6 +92,7 @@ body {
   width: 54ch;
   animation: maquinaEscribir 4s steps(54), blink .5s infinite step-end alternate;
   overflow:hidden;
+  font-size: 1vw;
   }
   
   @keyFrames maquinaEscribir {
@@ -102,8 +110,29 @@ section div h3{
   color: #0F4C75;
 }
 .half-section {
-  width: 50%;
+  width: 50%;  
 }
+/* El fondo animado*/
+.fondo{
+  /*background: linear-gradient(135deg,#0F4C75,#505488,#5A4894,#A950A1,#FF7CAE,#4DBA9B );*/
+  background: linear-gradient(to right,#18978F,#3BACB6,#45b882,#5ace98,#45b681,#3BACB6,#18978F);
+  background-size: 500%;
+  animation: fanimado 10s infinite;
+}
+@keyframes fanimado{
+  0%{
+    background-position:0% 50%;
+  }
+  50%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position:0% 50%;
+  }
+}
+
+
+
 .avatar-container {
   height: 100vh;
   display: flex;
@@ -122,10 +151,11 @@ section div h3{
   margin: 0;
   margin-left: 2%;
 }
-
+/*Par amodificar el tamaño de la letra */
 h1 {
   margin: 100px 0 0 0;
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size: 5vw;
   font-weight: 800;
   color: var(--accent-color);
   text-transform: uppercase;
@@ -137,16 +167,17 @@ h1 {
   flex-direction: row;
   padding: 0;
 }
-
+/*Para ajustar al tamñano de la resolucion los iconos*/
 .socials-icon {
-  font-size: 30px;
+  /*font-size: 30px;*/
+  font-size: 2vw;
   text-decoration: none;
   margin-right: 15px;
   color: var(--accent-color);
 }
 
 .text-section {
-  background-color: var(--primary-color);
+  /*background-color: var(--primary-color);*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,8 +185,10 @@ h1 {
   letter-spacing: 1px;
   margin-top: 0%;
   margin-bottom: 0%;
-}
+  font-size: 1vw;
 
+}
+/*Para redimensionar eltexto segun corresponda*/
 .title-section {
   display: flex;
   align-items: center;
@@ -163,9 +196,12 @@ h1 {
   color: var(--primary-color-dark);
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 40px;
+  /*font-size: 40px;*/
+  font-size: 1vw;
 }
-
+h2{
+  font-size: 4vw;
+}
 .project-list {
   list-style: none;
 }
@@ -196,7 +232,8 @@ form {
   border: 0;
   background-color: var(--accent-color);
   font: inherit;
-  font-size: 1.125rem;
+  /*font-size: 1.125rem;*/
+  font-size: 1vw;
   padding: .25rem 0;
   margin-top: 5px;
   margin-bottom: 15px;
@@ -210,7 +247,8 @@ form {
 .btn-send-message {
   margin-top: 10px;
   padding: 10px;
-  font-size: 20px;
+  /*font-size: 20px;*/
+  font-size: 1vw;
   background-color: var(--accent-color);
   border-radius: 4px;
   border-style: none;
@@ -238,12 +276,14 @@ footer {
 .footer-section-container {
   display: flex;
   justify-content: center;  
+  font-size: 1vw;/*agregada*/
 }
 
 .footer-link {
   text-decoration: none;
   color: var(--accent-color);
-  font-size: 18px;
+  /*font-size: 18px;*/
+  font-size: 1vw;
 }
 
 /*Informatica section parrafos*/

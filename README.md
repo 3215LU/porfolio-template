@@ -39,8 +39,7 @@ La extensión [Spanish Language Pack for Visual Studio Code](https://marketplace
 
 :smile: Si te interesa saber más de los tipos de gif usados en el README, puedes ver [Webfx](https://www.webfx.com/tools/emoji-cheat-sheet/) donde podrás elegir entre variedades de fuentes.
 
-## Recurso propuestos no usados
- Pagina de combinación de colores, es un apaleta de colores que combinan juntos (Color Hunt) [https://colorhunt.co/palette/]
+:smile: Pagina de combinación de colores, es un apaleta de colores que combinan juntos (Color Hunt) [https://colorhunt.co/palette/]
 
 Las convenciones de los commits  de las referencia dada en la clase Clase 03 - 22-06-2022, [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
